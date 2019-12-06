@@ -8,4 +8,8 @@ class ExampleClass(object):
 x = ExampleClass()
 y = ExampleClass()
 
-print("Hello World")
+print(f"x has instance number {x.instance_number}")
+print(f"y has instance number {y.instance_number}")
+print(f"There are {ExampleClass.list_of_instances.__len__()} instances of the class")
+print(f"x knows that there are {x.list_of_instances.__len__()} number of instances")
+print(f"y knows that there are {y.list_of_instances.__len__()} number of instances")
